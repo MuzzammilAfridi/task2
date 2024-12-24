@@ -25,11 +25,12 @@ const Feature = () => {
     ]
   return (
 
-    <div className="">
+    <div className="sm:flex">
    {featureData.map((elem, idx)=>(
-     <span key={idx} className=' border-b flex gap-5 px-3 items-center h-[122px] mx-auto w-[90vw] '>
-     <img src={elem.img} alt="img" />
-     <p className='text-[18px] leading-[25px] text-[#3A643B] font-bold'>{elem.text}</p>
+     <span key={idx} className=' border-b sm:border-r sm:border-b-0  flex gap-5 sm:gap-2 px-3 items-center h-[122px] mx-auto w-[90vw] sm:w-[23vw]'>
+     <img className='sm:relative sm:right-6' src={elem.img} alt="img" />
+     <p className='text-[18px] 
+      leading-[25px] text-[#3A643B] font-bold'>{elem.text}</p>
  </span>
    ))}
         </div>
